@@ -1,36 +1,35 @@
-title: My amazing datathon
-description: A datathon that will stimulate datasciene superpowers in all participants
-image: logo.jpg
-has_registration: True
+title: HASOC-Dravidian-CodeMix - FIRE 2020
+description: Offensive Language Identificaiton for Davidian Languages in Code-Mixed
+  Text
+start_date: 2020-06-19 18:53:00+00:00
+end_date: null
+competition_docker_image: ''
+image: logo.png
+has_registration: true
+force_submission_to_leaderboard: false
+disallow_leaderboard_modifying: false
+enable_detailed_results: false
+admin_names: bharathirajaakr
 html:
-    overview: overview.html
-    evaluation: evaluation.html
-    terms: terms_and_conditions.html
-    data: data.html
+  Important Dates: Important Dates.html
+  Organizers: Organizers.html
+  data: data.html
+  evaluation: evaluation.html
+  overview: overview.html
+  terms: terms.html
 phases:
-    1:
-        phasenumber: 1
-        label: "Competition"
-        start_date: 2021-05-17
-        max_submissions: 5
-        scoring_program: scoring_program_val.zip
-        reference_data: reference_data_val.zip
-    2:
-        phasenumber: 2
-        label: "View final leaderboard"
-        start_date: 2029-05-20
-        max_submissions: 0
-        scoring_program: scoring_program_tst.zip
-        reference_data: reference_data_tst.zip
-        auto_migration: True
+  0:
+    auto_migration: false
+    color: white
+    description: ''
+    is_scoring_only: true
+    label: First phase
+    max_submissions: 100
+    max_submissions_per_day: 999
+    phasenumber: 1
+    reference_data: reference_data_1.zip
+    scoring_program: scoring_program_1.zip
+    start_date: 2020-06-19 18:53:00+00:00
 leaderboard:
-    leaderboards:
-        RESULTS: &RESULTS
-            label: Results
-            rank: 1
-    columns:
-        mae:
-            leaderboard: *RESULTS
-            label: mae
-            rank: 1
-            numeric_format: 1
+  columns: {}
+  leaderboards: {}
